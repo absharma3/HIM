@@ -5,10 +5,7 @@ import org.junit.Test;
 
 import com.him.comp.HimSensor;
 import com.him.core.HimController;
-
-/**
- * 
- */
+import com.him.exception.HimException;
 
 /**
  * @author Abhimanyu Sharma
@@ -28,11 +25,21 @@ public class TestHimController {
 			fail("Expected error as sensor can't be null");
 			
 		}
-		catch(Exception e){
+		catch(HimException e){
 			//ignore this is an expected exception
 		}
 	}
 	@Test
-	public void test
+	public void testHimSensor(){
+		
+		try{
+		HimSensor sensor = new HimSensor(null);
+		fail("Expected error as sensor should not allow null for instantiation");
+		}
+		catch(HimException e){
+			//ignore this is an expected exception
+			
+		}
+	}
 
 }
