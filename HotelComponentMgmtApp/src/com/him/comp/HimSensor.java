@@ -20,8 +20,24 @@ public class HimSensor extends HimComponent {
 	}
 
 	public String getSid() {
-		// TODO Auto-generated method stub
 		return this.sid;
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.getSid().hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		HimSensor sensor;
+		try{
+			sensor =(HimSensor)obj;
+		}
+		catch(ClassCastException e){
+			return false;
+		}
+		return this.hashCode()== sensor.hashCode();
 	}
 	
 	
