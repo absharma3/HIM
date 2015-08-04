@@ -11,12 +11,17 @@ import com.him.exception.HimException;
  */
 public class HimSensor extends HimComponent {
 
-	String sid = null;
+	private String sid = null;
 	
 	public HimSensor(String sid ) throws HimException {
-		if(sid == null)
+		if(sid == null || sid.equals(""))
 			throw new HimException();
 		this.sid = sid;
+	}
+
+	public String getSid() {
+		// TODO Auto-generated method stub
+		return this.sid;
 	}
 	
 	

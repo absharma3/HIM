@@ -29,17 +29,5 @@ public class TestHimController {
 			//ignore this is an expected exception
 		}
 	}
-	@Test
-	public void testHimSensor(){
-		
-		try{
-		HimSensor sensor = new HimSensor(null);
-		fail("Expected error as sensor should not allow null for instantiation");
-		}
-		catch(HimException e){
-			//ignore this is an expected exception
-			
-		}
-	}
 
 }
