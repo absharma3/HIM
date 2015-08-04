@@ -1,7 +1,10 @@
 package com.him.section;
 
-public class HimMainCorridor implements HimCorridor {
+public class HimMainCorridor extends HimCorridor {
 
-	String floor;
-	
+	public HimMainCorridor(int id) {
+		super(id);
+	}
+
+		
 }

@@ -21,6 +21,7 @@ public class TestHimSensor {
 	public void testHimSensorNull() {
 
 		try {
+			@SuppressWarnings("unused")
 			HimSensor sensor = new HimSensor(null);
 			fail("Expected error as sensor should not allow null for instantiation");
 		} catch (HimException e) {
@@ -32,6 +33,7 @@ public class TestHimSensor {
 	@Test
 	public void testHimSensorEmptyString() {
 		try {
+			@SuppressWarnings("unused")
 			HimSensor sensor = new HimSensor("");
 			fail("Expected error as sensor should not allow empty string for instantiation");
 		} catch (HimException e) {

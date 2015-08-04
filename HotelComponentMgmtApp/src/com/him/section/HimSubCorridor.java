@@ -1,5 +1,9 @@
 package com.him.section;
 
-public class HimSubCorridor implements HimCorridor {
+public class HimSubCorridor extends HimCorridor {
+
+	public HimSubCorridor(int j) {
+		super(j);
+	}
 
 }

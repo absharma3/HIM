@@ -3,7 +3,6 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.him.comp.HimSensor;
 import com.him.core.HimController;
 import com.him.exception.HimException;
 
