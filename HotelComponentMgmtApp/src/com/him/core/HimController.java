@@ -16,6 +16,7 @@ public class HimController {
 		
 		if (sensor == null)
 			throw new HimException();
+		String[] data = sensor.getSid().split(":");
 		
 	}
 	

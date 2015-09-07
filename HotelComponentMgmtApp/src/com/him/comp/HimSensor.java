@@ -12,7 +12,7 @@ import com.him.exception.HimException;
 public class HimSensor extends HimComponent {
 
 	private String sid = null;
-	
+		
 	public HimSensor(String sid ) throws HimException {
 		if(sid == null || sid.equals(""))
 			throw new HimException();

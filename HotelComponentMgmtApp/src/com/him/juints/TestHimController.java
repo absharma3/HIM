@@ -18,7 +18,7 @@ public class TestHimController {
 	@Test
 	public void testSenseNullParam() {
 		
-		HimController ctrl = new HimController();
+		HimController ctrl = new HimController(0, 0, 0);
 		try{
 			ctrl.sense(null);
 			fail("Expected error as sensor can't be null");
